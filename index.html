@@ -5,14 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Seen - Ad Space in My Notes</title>
   <style>
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f9fa;
       color: #333;
+      line-height: 1.6;
     }
 
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffca3a;
+      color: #333;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #ffb347;
+    }
+
+    /* Header Section */
     header {
       text-align: center;
       padding: 50px 20px;
@@ -29,21 +57,7 @@
       margin: 10px 0 20px;
     }
 
-    .cta-button {
-      padding: 10px 20px;
-      background-color: #ffca3a;
-      color: #333;
-      text-decoration: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .cta-button:hover {
-      background-color: #ffb347;
-    }
-
+    /* Section Styles */
     section {
       padding: 40px 20px;
       max-width: 800px;
@@ -57,13 +71,31 @@
 
     section p {
       font-size: 1.1rem;
-      line-height: 1.6;
       margin-bottom: 20px;
     }
 
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✔";
+      color: #ffca3a;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Grid Section */
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
 
@@ -73,6 +105,12 @@
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
 
     .grid-item h3 {
@@ -94,7 +132,6 @@
 
     footer a {
       color: #ffe066;
-      text-decoration: none;
     }
 
     footer a:hover {
@@ -127,21 +164,15 @@
   <div class="grid">
     <div class="grid-item">
       <h3>Basic</h3>
-      <p>One note, visible for 3 days</p>
-      <p><strong>$X</strong></p>
-      <a class="cta-button" href="#contact">Select Basic</a>
+      <p>One note, visible for 7 days</p>
+      <p><strong>$100</strong></p>
+      <a class="cta-button" href="mailto:nach@nachdakwale.com?subject=Ad%20Purchase%20-%20Basic">Select Basic</a>
     </div>
     <div class="grid-item">
       <h3>Premium</h3>
       <p>Pinned note for 7 days</p>
-      <p><strong>$X</strong></p>
-      <a class="cta-button" href="#contact">Select Premium</a>
-    </div>
-    <div class="grid-item">
-      <h3>Custom</h3>
-      <p>Tailored campaigns for exclusive visibility</p>
-      <p><strong>Contact for Pricing</strong></p>
-      <a class="cta-button" href="#contact">Contact Us</a>
+      <p><strong>$150</strong></p>
+      <a class="cta-button" href="mailto:nach@nachdakwale.com?subject=Ad%20Purchase%20-%20Premium">Select Premium</a>
     </div>
   </div>
 </section>
@@ -153,7 +184,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2024 Your Name. All rights reserved. | <a href="mailto:nach@nachdakwale.com">Contact Us</a></p>
+  <p>&copy; 2024 Nach Dakwale. All rights reserved. | <a href="mailto:nach@nachdakwale.com">Contact Us</a></p>
 </footer>
 
 </body>
