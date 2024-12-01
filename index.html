@@ -17,6 +17,7 @@
 
     h1, h2, h3 {
       color: #222;
+      margin: 0;
     }
 
     a {
@@ -43,53 +44,17 @@
     /* Header Section */
     header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 30px 20px;
       background: linear-gradient(to bottom, #ffe066, #f4f4f4);
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 2rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      margin: 10px 0 20px;
-    }
-
-    /* Section Styles */
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    section p {
       font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      padding: 0;
-      list-style-type: none;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    ul li::before {
-      content: "✔";
-      color: #ffca3a;
-      position: absolute;
-      left: 0;
+      margin: 10px 0 20px;
     }
 
     /* Grid Section */
@@ -97,6 +62,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
+      max-width: 800px;
+      margin: 20px auto;
     }
 
     .grid-item {
@@ -114,7 +81,7 @@
     }
 
     .grid-item h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 10px;
     }
 
@@ -123,9 +90,16 @@
       margin: 10px 0;
     }
 
+    /* Section Styles */
+    section {
+      padding: 20px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 10px;
       background-color: #333;
       color: #fff;
     }
@@ -142,49 +116,42 @@
 <body>
 
 <header>
-  <h1>Get Seen. Build Buzz. Elevate Your Brand.</h1>
-  <p>Your message in my iPhone Notes—where curiosity sparks engagement.</p>
-  <a class="cta-button" href="#packages">Buy Now</a>
+  <h1>Get Seen in My Notes App</h1>
+  <p>The most unconventional ad space to spark curiosity and build buzz.</p>
 </header>
 
-<section>
-  <h2>Why Advertise Here?</h2>
-  <p>
-    People are already watching. Social media buzzes with curiosity about my Notes app—your brand can be at the center of it all.
-  </p>
-  <ul>
-    <li>Unique guerrilla marketing opportunity</li>
-    <li>Guaranteed visibility to an engaged audience</li>
-    <li>Sparks curiosity and organic discussions</li>
-  </ul>
-</section>
-
 <section id="packages">
-  <h2>Choose Your Buzz Level</h2>
+  <h2 style="text-align: center;">Choose Your Package</h2>
   <div class="grid">
     <div class="grid-item">
       <h3>Basic</h3>
-      <p>One note, visible for 7 days</p>
+      <p>Your ad in a note for 7 days.</p>
       <p><strong>$100</strong></p>
       <a class="cta-button" href="mailto:nach@nachdakwale.com?subject=Ad%20Purchase%20-%20Basic">Select Basic</a>
     </div>
     <div class="grid-item">
       <h3>Premium</h3>
-      <p>Pinned note for 7 days</p>
+      <p>Your ad in a pinned note for 7 days.</p>
       <p><strong>$150</strong></p>
       <a class="cta-button" href="mailto:nach@nachdakwale.com?subject=Ad%20Purchase%20-%20Premium">Select Premium</a>
     </div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Ready to Get Seen?</h2>
-  <p>Claim your spot in the most buzz-worthy ad space today.</p>
-  <a class="cta-button" href="mailto:nach@nachdakwale.com">Email Us to Get Started</a>
+<section>
+  <h2>Why Advertise Here?</h2>
+  <p>
+    My Notes app is the focus of curiosity on social media. People are reading and reacting to everything I write. This makes it a powerful guerrilla marketing space for your brand. Here’s why it works:
+  </p>
+  <ul>
+    <li>Be seen where others aren’t advertising.</li>
+    <li>Tap into an engaged, curious audience.</li>
+    <li>Spark organic discussions and buzz.</li>
+  </ul>
 </section>
 
 <footer>
-  <p>&copy; 2024 Nach Dakwale. All rights reserved. | <a href="mailto:nach@nachdakwale.com">Contact Us</a></p>
+  <p>&copy; 2024 Your Name. All rights reserved. | <a href="mailto:nach@nachdakwale.com">Contact Us</a></p>
 </footer>
 
 </body>
